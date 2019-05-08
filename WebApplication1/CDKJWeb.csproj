@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64AEBC96-0A00-4256-8DF8-B034C876935A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.1.0.0\lib\net40\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Owin.1.0.0\lib\net40\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.1.0.0\lib\net40\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.1.0.0\lib\net40\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DownloadExcel.aspx" />
+    <Content Include="images\b1.gif" />
+    <Content Include="images\b2.gif" />
+    <Content Include="images\b3.gif" />
+    <Content Include="images\b4.gif" />
+    <Content Include="images\b5.gif" />
+    <Content Include="images\b6.gif" />
+    <Content Include="images\body_dl.jpg" />
+    <Content Include="images\denglu_bj.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_x.png" />
+    <Content Include="images\new1.gif" />
+    <Content Include="images\so.gif" />
+    <Content Include="images\tmt1.png" />
+    <Content Include="images\tmt10.png" />
+    <Content Include="images\tmt11.png" />
+    <Content Include="images\tmt2.png" />
+    <Content Include="images\tmt3.png" />
+    <Content Include="images\tmt4.png" />
+    <Content Include="images\tmt5.png" />
+    <Content Include="images\tmt6.png" />
+    <Content Include="images\tmt7.png" />
+    <Content Include="images\tmt8.png" />
+    <Content Include="images\tmt9.png" />
+    <Content Include="images\tu1.png" />
+    <Content Include="images\xtb.gif" />
+    <Content Include="images\xtb2.gif" />
+    <Content Include="images\xtb3.gif" />
+    <Content Include="images\xtb4.gif" />
+    <Content Include="images\xuxian.gif" />
+    <Content Include="Index.aspx" />
+    <Content Include="LayUI\css\bootstrap-theme.css" />
+    <Content Include="LayUI\css\bootstrap-theme.min.css" />
+    <Content Include="LayUI\css\bootstrap.css" />
+    <Content Include="LayUI\css\bootstrap.min.css" />
+    <Content Include="LayUI\css\jquery.idcode.css" />
+    <Content Include="LayUI\css\layui.css" />
+    <Content Include="LayUI\css\layui.mobile.css" />
+    <Content Include="LayUI\css\modules\code.css" />
+    <Content Include="LayUI\css\modules\laydate\default\laydate.css" />
+    <Content Include="LayUI\css\modules\layer\default\icon-ext.png" />
+    <Content Include="LayUI\css\modules\layer\default\icon.png" />
+    <Content Include="LayUI\css\modules\layer\default\layer.css" />
+    <Content Include="LayUI\css\modules\layer\default\loading-0.gif" />
+    <Content Include="LayUI\css\modules\layer\default\loading-1.gif" />
+    <Content Include="LayUI\css\modules\layer\default\loading-2.gif" />
+    <Content Include="LayUI\datatime\calendar.js" />
+    <Content Include="LayUI\datatime\lang\en.js" />
+    <Content Include="LayUI\datatime\lang\zh-cn.js" />
+    <Content Include="LayUI\datatime\lang\zh-tw.js" />
+    <Content Include="LayUI\datatime\skin\blueFresh\datepicker.css" />
+    <Content Include="LayUI\datatime\skin\blueFresh\img.gif" />
+    <Content Include="LayUI\datatime\skin\blue\bg.jpg" />
+    <Content Include="LayUI\datatime\skin\blue\btnbg.jpg" />
+    <Content Include="LayUI\datatime\skin\blue\datepicker.css" />
+    <Content Include="LayUI\datatime\skin\blue\down.jpg" />
+    <Content Include="LayUI\datatime\skin\blue\left.gif" />
+    <Content Include="LayUI\datatime\skin\blue\navLeft.gif" />
+    <Content Include="LayUI\datatime\skin\blue\navRight.gif" />
+    <Content Include="LayUI\datatime\skin\blue\qs.jpg" />
+    <Content Include="LayUI\datatime\skin\blue\right.gif" />
+    <Content Include="LayUI\datatime\skin\blue\up.jpg" />
+    <Content Include="LayUI\datatime\skin\datePicker.gif" />
+    <Content Include="LayUI\datatime\skin\default\datepicker.css" />
+    <Content Include="LayUI\datatime\skin\default\img.gif" />
+    <Content Include="LayUI\datatime\skin\ext\datepicker.css" />
+    <Content Include="LayUI\datatime\skin\ext\dateselect.gif" />
+    <Content Include="LayUI\datatime\skin\ext\glass-bg.gif" />
+    <Content Include="LayUI\datatime\skin\ext\hd-sprite.gif" />
+    <Content Include="LayUI\datatime\skin\ext\img.gif" />
+    <Content Include="LayUI\datatime\skin\ext\left-btn.gif" />
+    <Content Include="LayUI\datatime\skin\ext\left-btn2.gif" />
+    <Content Include="LayUI\datatime\skin\ext\right-btn.gif" />
+    <Content Include="LayUI\datatime\skin\ext\right-btn2.gif" />
+    <Content Include="LayUI\datatime\skin\green\datepicker.css" />
+    <Content Include="LayUI\datatime\skin\green\img.gif" />
+    <Content Include="LayUI\datatime\skin\simple\bg.gif" />
+    <Content Include="LayUI\datatime\skin\simple\bg_calendar.gif" />
+    <Content Include="LayUI\datatime\skin\simple\datepicker.css" />
+    <Content Include="LayUI\datatime\skin\simple\down.jpg" />
+    <Content Include="LayUI\datatime\skin\simple\indexbg.gif" />
+    <Content Include="LayUI\datatime\skin\simple\left.gif" />
+    <Content Include="LayUI\datatime\skin\simple\navLeft.gif" />
+    <Content Include="LayUI\datatime\skin\simple\navRight.gif" />
+    <Content Include="LayUI\datatime\skin\simple\qs.jpg" />
+    <Content Include="LayUI\datatime\skin\simple\right.gif" />
+    <Content Include="LayUI\datatime\skin\simple\up.jpg" />
+    <Content Include="LayUI\datatime\skin\simple\ymbg.jpg" />
+    <Content Include="LayUI\datatime\skin\twoer\datepicker-dev.css" />
+    <Content Include="LayUI\datatime\skin\twoer\datepicker.css" />
+    <Content Include="LayUI\datatime\skin\twoer\img.gif" />
+    <Content Include="LayUI\datatime\skin\twoer\img.png" />
+    <Content Include="LayUI\datatime\skin\WdatePicker.css" />
+    <Content Include="LayUI\datatime\skin\whyGreen\bg.jpg" />
+    <Content Include="LayUI\datatime\skin\whyGreen\datepicker.css" />
+    <Content Include="LayUI\datatime\skin\whyGreen\img.gif" />
+    <Content Include="LayUI\datatime\skin\YcloudRed\bg.gif" />
+    <Content Include="LayUI\datatime\skin\YcloudRed\datepicker.css" />
+    <Content Include="LayUI\datatime\skin\YcloudRed\qs.jpg" />
+    <Content Include="LayUI\datatime\WdatePicker.js" />
+    <Content Include="LayUI\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="LayUI\img\b1.gif" />
+    <Content Include="LayUI\img\b2.gif" />
+    <Content Include="LayUI\img\b3.gif" />
+    <Content Include="LayUI\img\b4.gif" />
+    <Content Include="LayUI\img\b5.gif" />
+    <Content Include="LayUI\img\b6.gif" />
+    <Content Include="LayUI\img\body_dl.jpg" />
+    <Content Include="LayUI\img\denglu_bj.png" />
+    <Content Include="LayUI\img\logo.png" />
+    <Content Include="LayUI\img\logo1.jpg" />
+    <Content Include="LayUI\img\logo_x.png" />
+    <Content Include="LayUI\img\new1.gif" />
+    <Content Include="LayUI\img\so.gif" />
+    <Content Include="LayUI\img\tmt1.png" />
+    <Content Include="LayUI\img\tmt10.png" />
+    <Content Include="LayUI\img\tmt11.png" />
+    <Content Include="LayUI\img\tmt2.png" />
+    <Content Include="LayUI\img\tmt3.png" />
+    <Content Include="LayUI\img\tmt4.png" />
+    <Content Include="LayUI\img\tmt5.png" />
+    <Content Include="LayUI\img\tmt6.png" />
+    <Content Include="LayUI\img\tmt7.png" />
+    <Content Include="LayUI\img\tmt8.png" />
+    <Content Include="LayUI\img\tmt9.png" />
+    <Content Include="LayUI\img\tu1.png" />
+    <Content Include="LayUI\img\xtb.gif" />
+    <Content Include="LayUI\img\xtb2.gif" />
+    <Content Include="LayUI\img\xtb3.gif" />
+    <Content Include="LayUI\img\xtb4.gif" />
+    <Content Include="LayUI\img\xuxian.gif" />
+    <Content Include="LayUI\js\bootstrap.js" />
+    <Content Include="LayUI\js\bootstrap.min.js" />
+    <Content Include="LayUI\js\css\modules\laydate\default\laydate.css" />
+    <Content Include="LayUI\js\jquery-1.8.3.min.js" />
+    <Content Include="LayUI\js\jquery.idcode.js" />
+    <Content Include="LayUI\js\laydate.js" />
+    <Content Include="LayUI\js\layui.all.js" />
+    <Content Include="LayUI\js\layui.js" />
+    <Content Include="LayUI\js\lay\modules\carousel.js" />
+    <Content Include="LayUI\js\lay\modules\code.js" />
+    <Content Include="LayUI\js\lay\modules\element.js" />
+    <Content Include="LayUI\js\lay\modules\flow.js" />
+    <Content Include="LayUI\js\lay\modules\form.js" />
+    <Content Include="LayUI\js\lay\modules\jquery.js" />
+    <Content Include="LayUI\js\lay\modules\laydate.js" />
+    <Content Include="LayUI\js\lay\modules\layedit.js" />
+    <Content Include="LayUI\js\lay\modules\layer.js" />
+    <Content Include="LayUI\js\lay\modules\laypage.js" />
+    <Content Include="LayUI\js\lay\modules\laytpl.js" />
+    <Content Include="LayUI\js\lay\modules\mobile.js" />
+    <Content Include="LayUI\js\lay\modules\rate.js" />
+    <Content Include="LayUI\js\lay\modules\table.js" />
+    <Content Include="LayUI\js\lay\modules\tree.js" />
+    <Content Include="LayUI\js\lay\modules\upload.js" />
+    <Content Include="LayUI\js\lay\modules\util.js" />
+    <Content Include="LayUI\js\npm.js" />
+    <Content Include="LayUI\layui.all.js" />
+    <Content Include="LayUI\layui.js" />
+    <Content Include="LayUI\tcal.css" />
+    <Content Include="LayUI\tcal.js" />
+    <Content Include="List.aspx" />
+    <Content Include="LayUI\.project" />
+    <Content Include="LayUI\css\bootstrap-theme.css.map" />
+    <Content Include="LayUI\css\bootstrap-theme.min.css.map" />
+    <Content Include="LayUI\css\bootstrap.css.map" />
+    <Content Include="LayUI\css\bootstrap.min.css.map" />
+    <Content Include="LayUI\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="LayUI\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="LayUI\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="LayUI\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Login.aspx" />
+    <Content Include="ChangePasswor.aspx" />
+    <Content Include="LayUI\datatime\skin\blueFresh\Thumbs.db" />
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0.js" />
+    <Content Include="Scripts\jquery.signalR-1.0.0.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DownloadExcel.aspx.cs">
+      <DependentUpon>DownloadExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DownloadExcel.aspx.designer.cs">
+      <DependentUpon>DownloadExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="List.aspx.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="List.aspx.designer.cs">
+      <DependentUpon>List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePasswor.aspx.cs">
+      <DependentUpon>ChangePasswor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePasswor.aspx.designer.cs">
+      <DependentUpon>ChangePasswor.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>36713</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11091/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
